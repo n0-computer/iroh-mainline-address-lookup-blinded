@@ -2,11 +2,15 @@
 name = "iroh-mainline-address-lookup-blinded"
 version = "0.1.0"
 edition = "2024"
+readme = "README.md"
 description = "POC: iroh address lookup via BEP44 mutable items under Tor-style blinded keys"
 license = "MIT OR Apache-2.0"
 authors = ["n0 team"]
-repository = "https://github.com/n0-computer/iroh-address-lookups"
-homepage = "https://github.com/n0-computer/iroh-address-lookups"
+repository = "https://github.com/n0-computer/iroh-mainline-address-lookup-blinded"
+homepage = "https://github.com/n0-computer/iroh-mainline-address-lookup-blinded"
+documentation = "https://docs.rs/iroh-mainline-address-lookup-blinded"
+keywords = ["iroh", "dht", "mainline", "privacy", "address-lookup"]
+categories = ["network-programming"]
 rust-version = "1.91"
 
 [lints.rust]
@@ -34,3 +38,6 @@ tokio = { version = "1.49", features = ["rt-multi-thread", "macros", "signal"] }
 clap = { version = "4", features = ["derive"] }
 anyhow = "1"
 tracing-subscriber = "0.3"
+
+[package.metadata.docs.rs]
+all-features = true
